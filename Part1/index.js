@@ -1,13 +1,16 @@
-// Falsy (false)
-// undefined
-// null
-// 0 
-// false
-// ''
-// NaN'
+// swapping these values
+let a = 'red';
+let b = 'blue';
 
-let userColor =  undefined;
-let defaultColor = 'blue';
-let currentColor = userColor || defaultColor;
+// solution start
+let c = a;
+let d = b;
 
-console.log(currentColor);
+a = d;
+b = c;
+// end
+
+
+// do not change order
+console.log(a);
+console.log(b);

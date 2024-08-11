@@ -1,7 +1,13 @@
-let name = 'Mosh';
-let age = 30;
-let isApproved = false;
-let lastName;
-let pass = null;
+// Falsy (false)
+// undefined
+// null
+// 0 
+// false
+// ''
+// NaN'
 
-console.log(typeof(lastName), age);
+let userColor =  undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);

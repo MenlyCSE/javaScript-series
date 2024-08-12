@@ -1,18 +1,20 @@
-// condtional
-const fizzBuzz = (input) => {
-    if (typeof input !== 'number')
-        return NaN; 
+const checkSpeed = (speed) => {
+    let points = 0;
 
-    if ((input % 3 === 0) && (input % 5 === 0))
-        return 'FizzBuzz';
+    // replace with loop to avoid nesting
+    if (speed >= 75) {
+        points += (speed - 70) / 5;
 
-    if (input % 3 === 0)
-        return 'Fizz';
+        if (points >= 12)
+            return 'License suspended';
 
-    if (input % 5 === 0)
-        return 'Buzz';
+        return `Point: ${Math.floor(points)}`;
+    }
+    
+    if (speed <= 70)
+        return 'Ok';
 
-    return input;
+    return 'Please enter a value';
 };
 
-console.log(fizzBuzz('7'));
+console.log(checkSpeed());

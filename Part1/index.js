@@ -1,6 +1,18 @@
 // condtional
-const returnMaximum = (a, b) => {
-    return (a > b) ? a : b;
+const fizzBuzz = (input) => {
+    if (typeof input !== 'number')
+        return NaN; 
+
+    if ((input % 3 === 0) && (input % 5 === 0))
+        return 'FizzBuzz';
+
+    if (input % 3 === 0)
+        return 'Fizz';
+
+    if (input % 5 === 0)
+        return 'Buzz';
+
+    return input;
 };
 
-console.log(returnMaximum(30, 20));
+console.log(fizzBuzz('7'));

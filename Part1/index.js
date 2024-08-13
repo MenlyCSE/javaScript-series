@@ -13,4 +13,4 @@ const showPrimes = (limit) => {
     }
 };
 
-showPrimes(10);  
+showPrimes(3);

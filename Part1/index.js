@@ -1,20 +1,15 @@
-const checkSpeed = (speed) => {
-    let points = 0;
-
-    // replace with loop to avoid nesting
-    if (speed >= 75) {
-        points += (speed - 70) / 5;
-
-        if (points >= 12)
-            return 'License suspended';
-
-        return `Point: ${Math.floor(points)}`;
-    }
-    
-    if (speed <= 70)
-        return 'Ok';
-
-    return 'Please enter a value';
+// display properties
+const showProperties = (object) => {
+    for (let props in object) 
+        if (typeof object[props] === 'string')
+            console.log(`${props}: ${object[props]}`);
 };
 
-console.log(checkSpeed());
+const movie = {
+    title: 'Aqua man',
+    releaseYear: 2018,
+    rating: 4.5,
+    directors: 'Tony Starx'
+};
+
+showProperties(movie);

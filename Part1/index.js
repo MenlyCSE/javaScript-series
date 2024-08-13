@@ -12,7 +12,7 @@ const sum = (limit) => {
             sum += i;
     }
 
-   return `Sum: ${sum}`;
+    return `Sum: ${sum}`;
 };
 
 // console.log(sum(10));

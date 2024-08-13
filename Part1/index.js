@@ -1,18 +1,16 @@
-// 10: 3, 6, 9
-// 10: 5, 10
-// sum: 33
+const showPrimes = (limit) => {
+    for (let number = 2; number <= limit; number++) {
 
-const sum = (limit) => {
-    if (typeof limit !== 'number')
-        console.log('Please enter a numerical value...');
+        let isPrime = true;
+        for (let factor = 2; factor < number; factor++) {
+            if (number % factor === 0) {
+                isPrime = false;
+                break;
+            }
+        }
 
-    let sum = 0;
-    for (let i = 0; i <= limit; i++) {
-        if ((i % 3 === 0) || (i % 5 === 0))
-            sum += i;
+        if (isPrime) console.log(number);
     }
-
-    return `Sum: ${sum}`;
 };
 
-// console.log(sum(10));
+showPrimes(10); 

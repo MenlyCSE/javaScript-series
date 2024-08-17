@@ -1,9 +1,14 @@
 //
 const courses = [
-    { id: 1, name: 'a' },
-    { id: 2, name: 'b' },
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'JavaScript' }
 ];
 
-const course = courses.find(course => course.name === 'b');
+console.log(courses.sort((a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
 
-console.log(course);
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+}));

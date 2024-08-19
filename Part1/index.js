@@ -1,17 +1,32 @@
 //
-const numbers = [1, 2, 3, 4];
+const movie = [
+    {
+        title: 'Gotham',
+        year: 2018,
+        rating: 4.5
+    },
+    {
+        title: 'Mike Scores',
+        year: 2018,
+        rating: 4.7
+    },
+    {
+        title: 'City Girls',
+        year: 2018,
+        rating: 3
+    },
+    {
+        title: 'City Girls',
+        year: 2017,
+        rating: 4.5
+    },
+];
+
+const result = movie
+    .filter(movie => movie.year === 2018 && movie.rating >= 4)
+    .sort((a, b) => a.rating - b.rating)
+    .reverse()
+    .map(movie => movie.title);
 
 
-const getMax = array => {
-    // let currentNumber = array[0];
-    // for (let i = 0; i <= array.length; i++)
-    //     if (currentNumber < array[i])
-    //         currentNumber = array[i];
-
-    // return currentNumber;
-
-    return array.reduce((accumulator, current) => (accumulator > current) ? accumulator : current);
-};
-
-
-console.log(getMax(numbers));
+console.log(result);

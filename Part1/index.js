@@ -1,8 +1,12 @@
-// Scope
-{
-    var message = 'Hi';
-}
+// Reverse String
+const myName = 'Menly';
 
-// var => function scope
+const string = (name) => {
+    let string = '';
+    for (let i = name.length - 1; i >= 0; i--)
+        string += name[i];
 
-console.log(message);
+    return string;
+};
+
+console.log(string(myName));

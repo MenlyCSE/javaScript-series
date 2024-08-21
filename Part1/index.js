@@ -1,12 +1,16 @@
-// Reverse String
-const myName = 'Menly';
+// 
+const numbers = [1, 2, 3];
 
-const string = (name) => {
-    let string = '';
-    for (let i = name.length - 1; i >= 0; i--)
-        string += name[i];
+const testArray = (array) => {
+    if (!Array.isArray(array))
+        throw new Error('Invalid input!');
 
-    return string;
+    console.log('Working :)')
 };
 
-console.log(string(myName));
+try {
+    console.log(testArray(numbers));
+}
+catch (error) {
+    console.error('NO!');
+}

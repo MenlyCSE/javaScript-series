@@ -2,5 +2,5 @@
  
 From [CodeWithMosh's](https://members.codewithmosh.com/) certification program...
 
-<!-- ## Fundamentals -->
-<!-- <img width="842" alt="0" src="https://github.com/user-attachments/assets/eaba83cd-3ca6-4d26-9e58-4b2f0d48ca49"> -->
+## Fundamentals
+![certificate-of-completion-for-javascript-basics-1](https://github.com/user-attachments/assets/170b1521-095a-404b-8200-626c44b63532)

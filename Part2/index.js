@@ -1,23 +1,25 @@
-//
-function Circle(radius) {
-    this.radius = radius;
+// property: duration - user input
+// method: start: it adds seconds to duration - toggle state
+// method: stop: it stops adding the seconds - toggle state
+// method: reset: it resets the duration property
 
-    let defaultLocation = {
-        x: 0,
-        y: 0
+function Stopwatch() {
+    let stats = {
+        time: 0,
+        state: false,
     };
 
-    let computeOptimumLocation = function(factor) {
-        // ... 
+    this.start = function () {
+        while (stats.state) {
+            stats.time++;
+        };
     };
 
-    this.draw = function () {
-        computeOptimumLocation(0.1);
-        console.log('draw');
+    this.stop = function () {
+        stats.state = false;
     };
 }
 
-const circle = new Circle(10);
-circle.defaultLocation = false;
-circle.computeOptimumLocation(0.23);
-circle.draw();
+const sw = new Stopwatch();
+
+console.log(sw.duration());

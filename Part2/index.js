@@ -1,6 +1,23 @@
 //
-function increase(number) {
-    return number++;
+function Circle(radius) {
+    this.radius = radius;
+
+    let defaultLocation = {
+        x: 0,
+        y: 0
+    };
+
+    let computeOptimumLocation = function(factor) {
+        // ... 
+    };
+
+    this.draw = function () {
+        computeOptimumLocation(0.1);
+        console.log('draw');
+    };
 }
 
-console.log(increase(10));
+const circle = new Circle(10);
+circle.defaultLocation = false;
+circle.computeOptimumLocation(0.23);
+circle.draw();

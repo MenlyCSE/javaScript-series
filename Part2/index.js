@@ -14,13 +14,18 @@ function Stopwatch() {
     }
 
     this.start = function () {
-        while (stats.state === true) {
-            stats.time++;
+        if (!stats.state) {
+            stats.state = true;
+            setInterval(() => {
+                stats.time++;
+                console.log(stats.time)
+            }, 1000);
         }
     };
 
     this.stop = function () {
         stats.state = false;
+        console.log(stats.time);
     };
 }
 

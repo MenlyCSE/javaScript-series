@@ -9,10 +9,14 @@ function Stopwatch() {
         state: false,
     };
 
+    this.duration = function () {
+        return stats.time;
+    }
+
     this.start = function () {
-        while (stats.state) {
+        while (stats.state === true) {
             stats.time++;
-        };
+        }
     };
 
     this.stop = function () {
@@ -21,5 +25,3 @@ function Stopwatch() {
 }
 
 const sw = new Stopwatch();
-
-console.log(sw.duration());

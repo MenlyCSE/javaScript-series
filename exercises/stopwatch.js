@@ -42,4 +42,4 @@ function Stopwatch() {
     });
 }
 
-const sw = new Stopwatch();
+const sw = new Stopwatch();   

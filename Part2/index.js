@@ -24,9 +24,9 @@ function Stopwatch() {
     };
 
     this.stop = function () { 
-        stats.state = false; 
-        console.log(stats.time); 
-    }; 
-} 
- 
-const sw = new Stopwatch(); 
+        stats.state = false;  
+        console.log(stats.time);  
+    };  
+}  
+  
+const sw = new Stopwatch();   

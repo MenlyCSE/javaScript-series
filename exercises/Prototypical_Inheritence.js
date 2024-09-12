@@ -24,3 +24,4 @@ function HtmlSelectElement() {
 }
 
 HtmlSelectElement.prototype = new HtmlElement();
+HtmlSelectElement.prototype.constructor = HtmlSelectElement;

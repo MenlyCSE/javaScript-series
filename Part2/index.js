@@ -12,7 +12,16 @@ class Circle {
         this.move = function() {}
     }
 
+    // instance
     draw() {
         console.log('draw');
     }
+
+    // Static
+    static parse(str) {
+        const radius = JSON.parse(str).radius;
+        return new Circle(radius);
+    }
 }
+
+const c = new Circle(1);

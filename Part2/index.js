@@ -1,7 +1,22 @@
-class Math2 {
-    static abs(value) {
-        // magic
+
+class Shape {
+    constructor(color) {
+        this.color = color;
+    }
+
+    move() {
+        console.log('move');
     }
 }
 
-Math2.abs()
+class Circle extends Shape {
+    constructor(color) {
+        super(color)
+    }
+
+    draw() {
+        console.log('draw');
+    }
+}
+
+const c = new Circle('red', 1);

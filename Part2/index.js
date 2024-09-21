@@ -1,22 +1,24 @@
+// DSA: stack
 
-class Shape {
-    move() {
-        console.log('move');
+class Stack {
+    constructor() {
+        let array = [];
+
+        this.count = array.length;
+
+        this.push = function(obj) {
+            array.push(obj);
+            this.count = array.length;
+        }
+
+        this.pop = function() {
+
+        }
+        
+        this.peek = function() {
+            return array[this.count];
+        }
     }
 }
 
-class Circle extends Shape {
-    move() {
-        super.move();
-        console.log('circle move');
-    }
-}
-
-class Square extends Circle {
-    move() {
-        super.move();
-    }
-}
-
-const c = new Circle();
-const s = new Square();
+const stack = new Stack();

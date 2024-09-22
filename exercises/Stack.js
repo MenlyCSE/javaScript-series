@@ -1,4 +1,3 @@
-// DSA: stack
 const _array = new WeakMap();
 
 class Stack {
